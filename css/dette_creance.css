@@ -1,0 +1,36 @@
+#exigence1{
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+#exigence2{
+    background-color: greenyellow;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
+
+body{
+    background-color: khaki;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    margin-bottom: 2cm;
+
+}
+h2{
+    text-align: center;
+    color:purple;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+#encours{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}

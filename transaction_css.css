@@ -1,0 +1,34 @@
+body{
+    color: midnightblue;
+    font-size: large;
+    font-style: italic;
+    background-color: khaki;
+
+}
+h1{
+    text-align: center;
+    background-color: lightgreen;
+}
+
+h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 40px;
+}
+
+#debut{
+    margin-left: 12cm;
+    text-align: center;
+    background-color:lavender;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-width: 2px;
+    border-color: orangered;
+    border-style: outset;
+}
+

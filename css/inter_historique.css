@@ -1,0 +1,22 @@
+#submit{
+    background-color: greenyellow;
+    color: red;
+    font-weight: 500;
+    margin-left: 11cm;
+}
+
+h2{
+    text-align: center;
+    color: lightcoral;
+    font-weight: 700;
+    margin-bottom: 4cm;
+    margin-top: 1cm;
+}
+
+body{
+    background-color: khaki;
+}
+
+#ajout{
+    margin-left: 11cm;
+}

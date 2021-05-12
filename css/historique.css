@@ -1,0 +1,28 @@
+#exigence{
+    background-color: lightgray;
+}
+
+h1{
+    color: lightcoral;
+    margin-bottom: 4cm;
+}
+h4{
+    font-style: italic;
+    font-size: small;
+}
+
+
+body{
+    background-color: khaki;
+    text-align: center;
+}
+
+#Red{
+    color: red;
+    font-weight: 700;
+}
+
+#Green{
+    color: green;
+    font-weight: 700;
+}

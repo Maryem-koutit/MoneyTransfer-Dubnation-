@@ -1,0 +1,23 @@
+h1{
+    color: coral;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    text-align: center;
+    font-weight: 700;
+}
+
+p{
+    text-align: center;
+    color: darkblue;
+}
+
+body{
+    background-color: khaki;
+}
+
+#submit{
+    background-color: orangered;
+    color: blue;
+    font-weight: 700; 
+    margin-top: 1cm;
+}

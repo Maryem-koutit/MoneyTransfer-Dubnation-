@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+      <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--font-->
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/transaction_ami.css">
+
+    </head>
+
+    <body>
+
+      <!--banner-->
+      <div class="banner">
+        <div class="row align-items-center">
+
+        <!--website_name-->
+        <div class="col" id='Topright'>DEBSTER</div>
+        <!--end_website_name-->
+
+        <!--logo-->
+        <div class="col" id='Topmiddle'>
+          <img src="img/Screenshot from 2020-04-09 13-15-47.png" class="imag_small" alt="Logo" />
+        </div>
+        <!--end_logo-->
+
+        <div class="col" id='Topleft'>
+          <select>
+             <option value="valeur1"><a href='myprofile.php'>Mon profil</a></option>
+             <option value="valeur2"><a href='comptes.php'>Mes comptes</a></option>
+             <option value="valeur3"><a href='carnet_amis.php'>Mes contacts</a></option>
+          </select>
+          <button type="button" class="btn btn-light"><a href='deconnect.php'>Déconnexion</a></button>
+        </div>
+
+       </div>
+      </div>
+
+      <!--formulaire-->
+      <div class="container">
+             <h1>Transaction Simple</h1>
+             <form class="needs-validation" novalidate>
+                     <div class="form-row">
+                         <label for="utilisateur source">Utilisateur source</label>
+                         <input type="text" class="form-control" id="pseudo" placeholder="Pierre" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Utilisteur cible">Utilisateur cible</label>
+                         <input type="text" class="form-control" id="pseudo" placeholder="Marie" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Message explicatif">Message explicatif</label>
+                         <input type="text" class="form-control" id="Message_Explicatif" placeholder="Courses" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Montant">Montant</label>
+                         <input type="text" class="form-control" id="Montant" placeholder=">0" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Date de création">Date de création</label>
+                         <input type="date" class="form-control" id="date_de_création" placeholder="01/05/2020" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Statut">Statut</label>
+                         <input type="text" class="form-control" id="statut" placeholder="ouvert" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Message de fermeture">Message de fermeture</label>
+                         <input type="text" class="form-control" id="Message_de_fermeture" placeholder="Merci" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+                     <div class="form-row">
+                         <label for="Date de fermeture">Date de fermeture</label>
+                         <input type="date" class="form-control" id="date_de_fermeture" placeholder="03/05/2020" required>
+                         <div class="valid-feedback">Ok !</div>
+                         <div class="invalid-feedback">Valeur incorrecte</div>
+                     </div>
+
+                 <button class="btn btn-primary" type="submit">Payer</button>
+             </form>
+         </div>
+         <script>
+           /*La fonction principale de ce script est d'empêcher l'envoi du formulaire si un champ a été mal rempli
+            *et d'appliquer les styles de validation aux différents éléments de formulaire*/
+           (function() {
+             'use strict';
+             window.addEventListener('load', function() {
+               let forms = document.getElementsByClassName('needs-validation');
+               let validation = Array.prototype.filter.call(forms, function(form) {
+                 form.addEventListener('submit', function(event) {
+                   if (form.checkValidity() === false) {
+                     event.preventDefault();
+                     event.stopPropagation();
+                   }
+                   form.classList.add('was-validated');
+                 }, false);
+               });
+             }, false);
+           })();
+         </script>
+      </body>
+
+      </html>
